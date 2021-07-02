@@ -1,10 +1,12 @@
 package com.revature.app;
 
+import java.io.Console;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
@@ -23,16 +25,26 @@ public class CodinGameAutomation {
 
 	public static void main(String[] args) throws IOException, InterruptedException {
 		
+		//User Input
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Enter CodinGame Email");
 		String email = scanner.nextLine();
+		
+		//Testing Password Mask
+//		Console console = System.console() ;
+//		char [] mask = console.readPassword("Enter password: ");
+//		Arrays.fill(mask,'*');
+//		String password = new String(mask);
 		System.out.println("Enter CodinGame Password");
 		String password = scanner.nextLine();
+		
+		//User Input (Cont.)
 		System.out.println("Enter URL");
 		String url = scanner.nextLine();
 		System.out.println("Enter new file name");
 		String fileName = scanner.nextLine();
-
+		
+		//Setting up Selenium
 		WebDriverManager.firefoxdriver().setup();
 		FirefoxBinary firefoxBinary = new FirefoxBinary();
 		firefoxBinary.addCommandLineOptions("--headless");
@@ -42,13 +54,16 @@ public class CodinGameAutomation {
 		driver.get(url); //https://www.codingame.com/clashofcode/clash/report/182018842fdd90bc1942ab5ea8d5f7f994bbcf2
 
 		WebDriverWait wdw = new WebDriverWait(driver, 20);
-
+		
+		//Cookies Tab
 		Boolean acceptIsPresent = driver.findElements(By.xpath("//*[text()='Accept']")).size() > 0;
 
 		wdw.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[text()='Accept']")));
 		if (acceptIsPresent)
 			driver.findElement(By.xpath("//*[text()='Accept']")).click();
 
+		
+		//Login Tab
 		wdw.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[text()='Log In']")));
 		driver.findElement(By.xpath("//*[text()='Log In']")).click();
 
@@ -57,6 +72,7 @@ public class CodinGameAutomation {
 		driver.findElement(By.cssSelector("input[name=\"password\"]")).sendKeys(password);
 		driver.findElement(By.cssSelector("button[type=\"submit\"]")).click();
 
+		//Automate Results
 		Thread.sleep(2000);
 		boolean viewCode = false;
 		List<String[]> result = new ArrayList<String[]>();
@@ -79,6 +95,7 @@ public class CodinGameAutomation {
 			result.add(playerRecord);
 		}
 
+		//Convert to CSV
 		String userHome = System.getProperty("user.home") + "/Desktop";
 		File file = new File(userHome, fileName + ".csv");
 		boolean fileResult = file.createNewFile();
@@ -94,6 +111,7 @@ public class CodinGameAutomation {
 
 		csvWriter.writeAll(result);
 
+		//Close Streams and Driver
 		csvWriter.close();
 		osw.close();
 		fs.close();
