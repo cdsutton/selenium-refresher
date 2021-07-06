@@ -38,7 +38,9 @@ To-do list:
 * Git Clone the Repository
 * Open it in GitHub Desktop
 * Download the Zip Folder
-![Step 1](C:\Users\Kooramja\Desktop\Step 1.png)
+
+### Step 2
+#### Go into the Executables Folder and you will see the SeleniumRefresher.bat file along with some JAR files. Editing the .bat file helps in identifying which JAR file should be executed. Right-click the .bat file and select Edit, then change the name of the current JAR file to the desired version (Default is 
 
 
 
