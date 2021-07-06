@@ -2,17 +2,22 @@
 
 ## Project Description
 
-The Expense Reimbursement System (ERS) will manage the process of reimbursing employees for expenses incurred while on company time. All employees in the company can login and submit requests for reimbursement and view their past tickets and pending requests. Finance managers can log in and view all reimbursement requests and past history for all employees in the company. Finance managers are authorized to approve and deny requests for expense reimbursement.
+A product that automates the web browser to log-on to CodinGame and obtain a user-requested Clash Report in the form of a .csv file. This product can be accessed through an executable JAR file with an extra step covered by simply clicking on a batch file to run the product. There is also an option to mask the user's password for security purposes. Overall, this product was meant to help the developer improve on their knowledge and skills in Selenium.
 
 ## Technologies Used
+* Git
 * Java
+* Maven
+* OpenCSV
 * Selenium
+* WebDriverManager
 
 ## Features
 ### List of features ready:
-* Login Functionality!
-* Mask Password Input!
-* Headless Mode!
+* Login Functionality! - To be able to access Clash Reports and Shared Code!
+* Mask Password Input! - To protect user credentials at a in-person level!
+* Headless Mode! - To allow for multitasking while the automation executes as well as a boost in speed and performance!
+* Batch File! - To automate the task of executing the JAR file in the Command Window!
 
 ## Usage
 
@@ -40,10 +45,10 @@ The Expense Reimbursement System (ERS) will manage the process of reimbursing em
 
 ### Step 3
 #### Double-click the .bat file and input the necessary details to obtain the CodinGame Clash Results.
-* Enter your CodinGame Email
-* Enter your CodinGame Password
-* Enter the URL of the CodinGame Report you wish to obtain
-* Enter the filename you wish to name your CSV file
+* Enter your CodinGame Email.
+* Enter your CodinGame Password.
+* Enter the URL of the CodinGame Report you wish to obtain.
+* Enter the filename you wish to name your CSV file.
 
 ![](./images/StepThree.png)
 
