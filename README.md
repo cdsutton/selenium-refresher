@@ -40,9 +40,21 @@ To-do list:
 * Download the Zip Folder
 
 ### Step 2
-#### Go into the Executables Folder and you will see the SeleniumRefresher.bat file along with some JAR files. Editing the .bat file helps in identifying which JAR file should be executed. Right-click the .bat file and select Edit, then change the name of the current JAR file to the desired version (Default is 
+#### Go into the Executables Folder and you will see the SeleniumRefresher.bat file along with some JAR files.
+* Editing the .bat file helps in identifying which JAR file should be executed.
 
+### Step 2.5
+#### Right-click the .bat file and select Edit, then change the name of the current JAR file to the desired version (Default is SeleniumRefresherOriginal.jar)
+* SeleniumRefresherOriginal will allow the user to see what password they are inputting.
+* SeleniumRefresherMaskVerify will mask the password the user inputs, but after submitting will be shown the password they just inputted.
+* SeleniumRefresherMask will only mask the password the user inputs, no way of verifying what was inputted.
 
+### Step 3
+#### Input the necessary details to obtain the CodinGame Clash Results
+* Enter your CodinGame Email
+* Enter your CodinGame Password
+* Enter the URL of the CodinGame Report you wish to obtain
+* Enter the filename you wish to name your CSV file
 
-3. Go to localhost:7009
-4. Enjoy!
+### Step 4
+#### Enjoy your automated results!
