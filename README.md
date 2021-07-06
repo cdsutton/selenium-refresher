@@ -1,6 +1,4 @@
-# selenium-refresher
-
-# Expense Reimbursement System (ERS) - JWA v3.1
+# Selenium Refresher: CodinGame Automation
 
 ## Project Description
 
@@ -23,19 +21,19 @@ The Expense Reimbursement System (ERS) will manage the process of reimbursing em
 * Git Clone the Repository
 * Open it in GitHub Desktop
 * Download the Zip Folder
-![](./images/Step 1.PNG)
+![](./images/StepOne.png)
 
 ### Step 2
 #### Go into the Executables Folder and you will see the SeleniumRefresher.bat file along with some JAR files.
 * Editing the .bat file helps in identifying which JAR file should be executed.
-![](./images/Step 2.png)
+![](./images/StepTwo.png)
 
 ### Step 2.5
 #### Right-click the .bat file and select Edit, then change the name of the current JAR file to the desired version.
 * SeleniumRefresherOriginal will allow the user to see what password they are inputting. (Default)
 * SeleniumRefresherMaskVerify will mask the password the user inputs, but after submitting will be shown the password they just inputted.
 * SeleniumRefresherMask will only mask the password the user inputs, no way of verifying what was inputted.
-![](./images/Step 2.5.png)
+![](./images/StepTwoHalf.png)
 
 ### Step 3
 #### Double-click the .bat file and input the necessary details to obtain the CodinGame Clash Results.
@@ -43,8 +41,8 @@ The Expense Reimbursement System (ERS) will manage the process of reimbursing em
 * Enter your CodinGame Password
 * Enter the URL of the CodinGame Report you wish to obtain
 * Enter the filename you wish to name your CSV file
-![](./images/Step 3.png)
+![](./images/StepThree.png)
 
 ### Step 4
 #### Enjoy your automated results!
-![](./images/Step 4.png)
+![](./images/StepFour.png)
