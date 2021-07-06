@@ -1,1 +1,1 @@
-java -jar SeleniumRefresherAsterisk.jar
+java -jar SeleniumRefresherOriginal.jar
