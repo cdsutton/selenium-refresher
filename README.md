@@ -23,7 +23,7 @@ The Expense Reimbursement System (ERS) will manage the process of reimbursing em
 * Git Clone the Repository
 * Open it in GitHub Desktop
 * Download the Zip Folder
-![](./images/Step 1.png)
+![](./images/Step 1.PNG)
 
 ### Step 2
 #### Go into the Executables Folder and you will see the SeleniumRefresher.bat file along with some JAR files.
