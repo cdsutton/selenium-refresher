@@ -38,7 +38,7 @@ To-do list:
 * Git Clone the Repository
 * Open it in GitHub Desktop
 * Download the Zip Folder
-
+![](./Desktop/Step 1.png)
 
 
 
