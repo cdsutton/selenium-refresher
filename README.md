@@ -44,13 +44,13 @@ To-do list:
 * Editing the .bat file helps in identifying which JAR file should be executed.
 
 ### Step 2.5
-#### Right-click the .bat file and select Edit, then change the name of the current JAR file to the desired version (Default is SeleniumRefresherOriginal.jar)
-* SeleniumRefresherOriginal will allow the user to see what password they are inputting.
+#### Right-click the .bat file and select Edit, then change the name of the current JAR file to the desired version.
+* SeleniumRefresherOriginal will allow the user to see what password they are inputting. (Default)
 * SeleniumRefresherMaskVerify will mask the password the user inputs, but after submitting will be shown the password they just inputted.
 * SeleniumRefresherMask will only mask the password the user inputs, no way of verifying what was inputted.
 
 ### Step 3
-#### Input the necessary details to obtain the CodinGame Clash Results
+#### Double-click the .bat file and input the necessary details to obtain the CodinGame Clash Results.
 * Enter your CodinGame Email
 * Enter your CodinGame Password
 * Enter the URL of the CodinGame Report you wish to obtain
