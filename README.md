@@ -33,6 +33,14 @@ To-do list:
 
 ## Usage
 
-1. Git Clone the Repository through Git Bash 
-2. Go to localhost:7009
-3. Enjoy!
+### Step 1
+#### To download the project:
+* Git Clone the Repository
+* Open it in GitHub Desktop
+* Download the Zip Folder
+
+
+
+
+3. Go to localhost:7009
+4. Enjoy!
